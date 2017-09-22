@@ -1,12 +1,3 @@
-# Try out the method in irb using a few different values
-
-# Once you feel like you understand how it works, write down
-# its arguments (name, data type, optional/required, default
-# value if any) its return type
-
-# a line of code showing how to call the method and what
-# will be returned
-
 # STRING
 # length: No arguments. Returns the total number of characters in a string
 
@@ -75,12 +66,30 @@ irb(main):023:0> array
 
 # Hash
 #
-# to_a
-# has_key?
-# has_value?
+# to_a changes a hash to a nested array of arrays
+irb(main):004:0> h = { "c" => 300, "a" => 100, "d" => 400, }
+=> {"c"=>300, "a"=>100, "d"=>400}
+irb(main):005:0> h.to_a
+=> [["c", 300], ["a", 100], ["d", 400]]
+
+# has_key? returns boolean true if the argument's key is present. One required argument.
+irb(main):010:0> hash = { "1" => 100, "2" => 200, "3" => 1000}
+=> {"1"=>100, "2"=>200, "3"=>1000}
+irb(main):011:0> hash.has_key?("9")
+=> false
+
+# has_value? returns boolean true if the arguments value is prsent. One required argument.
+irb(main):012:0> hash = { "1" => 100, "2" => 200, "3" => 1000}                            => {"1"=>100, "2"=>200, "3"=>1000}
+irb(main):013:0> hash.has_value?(200)
+=> true
+
+
+
 # Time
 #
 # now
+
+
 # File
 #
 # exist?
