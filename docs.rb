@@ -86,8 +86,10 @@ irb(main):013:0> hash.has_value?(200)
 
 
 # Time
-#
-# now
+
+# now Returns the current time. Has no arguments
+irb(main):001:0> Time.now
+=> 2017-09-22 13:56:03 -0400
 
 
 # File
