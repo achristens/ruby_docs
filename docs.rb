@@ -93,6 +93,11 @@ irb(main):001:0> Time.now
 
 
 # File
-#
-# exist?
-# extname
+
+# exist? returns boolean true if the file in question exists. Requires one argument, the file name.
+irb(main):002:0>  File.exist?("docs.rb")
+=> true
+
+# extname returns the filetype (aka, extension name) of a file, including the . Requires one argument, the entire filename or path if you aren't in the correct folder.
+irb(main):001:0> File.extname("docs.rb")
+=> ".rb"
